@@ -149,7 +149,16 @@ export default function KARELandingPage() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Dynamically calculate header height
+      const header = document.querySelector('header');
+      const headerOffset = header ? header.offsetHeight - 20 : 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
     setMobileMenuOpen(false);
   };
@@ -591,8 +600,8 @@ export default function KARELandingPage() {
             </p>
           </div>
 
-          <Card className="border-2 border-[#F5A623] shadow-xl">
-            <CardHeader className="text-center bg-linear-to-r from-[#FEF3C7] to-[#FDE68A] rounded-t-lg">
+          <Card className="border-2 border-[#F5A623] shadow-xl pt-0 overflow-hidden">
+            <CardHeader className="text-center bg-linear-to-r from-[#FEF3C7] to-[#FDE68A] py-4">
               <CardTitle className="text-2xl text-gray-900 flex items-center justify-center gap-2">
                 <HeartHandshake className="w-7 h-7 text-[#F5A623]" />
                 Bank Details for Donation
@@ -644,9 +653,9 @@ export default function KARELandingPage() {
       {/* Health Minister Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <Card className="border-0 shadow-xl overflow-hidden">
+          <Card className="border-0 shadow-xl overflow-hidden p-0">
             <div className="grid md:grid-cols-3 gap-0">
-              <div className="relative h-64 md:h-auto">
+              <div className="relative aspect-square md:aspect-auto md:h-auto">
                 <Image
                   src="/hm-portrait.png"
                   alt="Health Minister"
