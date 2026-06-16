@@ -708,39 +708,39 @@ export default function KARELandingPage() {
               </p>
             </Card>
 
-            {/* Rahul Krishna Sharma IAS */}
+            {/* Sharmila Mary Joseph IAS */}
             <Card className="border-0 shadow-lg text-center p-6">
               <div className="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/Rahul-Krishna-Sharma-IAS.png"
-                  alt="Rahul Krishna Sharma IAS"
+                  src="/Sharmila-Mary-Joseph-IAS.png"
+                  alt="Sharmila Mary Joseph IAS"
                   fill
                   className="object-cover object-top"
                 />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900">
-                Rahul Krishna Sharma IAS
+                Sharmila Mary Joseph IAS
               </h3>
               <p className="text-sm text-gray-500">
-                State Mission Director, National Health Mission (NHM)
+                Principal Secretary, Health and Family Welfare Department, Government of Kerala
               </p>
             </Card>
 
-            {/* Dr. Reena K J */}
+            {/* Anu S. Nair IAS */}
             <Card className="border-0 shadow-lg text-center p-6">
               <div className="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
-                  src="/Dr-Reena-KJ.png"
-                  alt="Dr. Reena K J"
+                  src="/Anu-S-Nair-IAS.png"
+                  alt="Anu S. Nair IAS"
                   fill
                   className="object-cover object-top"
                 />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900">
-                Dr. Reena K J
+                Anu S. Nair IAS
               </h3>
               <p className="text-sm text-gray-500">
-                Director, Directorate of Health Services (DHS)
+                State Mission Director, National Health Mission (NHM), Kerala
               </p>
             </Card>
           </div>
