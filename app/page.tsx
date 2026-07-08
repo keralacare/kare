@@ -691,7 +691,7 @@ export default function KARELandingPage() {
           {/* Officials */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Dr. Rajan N. Khobragade IAS */}
-            <Card className="border-0 shadow-lg text-center p-6">
+            {/*<Card className="border-0 shadow-lg text-center p-6">
               <div className="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden">
                 <Image
                   src="/Dr-Rajan-N-Khobragade.png"
@@ -706,7 +706,7 @@ export default function KARELandingPage() {
               <p className="text-sm text-gray-500">
                 Additional Chief Secretary, Department of Health & Family Welfare
               </p>
-            </Card>
+            </Card>*/}
 
             {/* Sharmila Mary Joseph IAS */}
             <Card className="border-0 shadow-lg text-center p-6">
